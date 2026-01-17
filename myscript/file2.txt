@@ -1,0 +1,7 @@
+#!/bin/bash
+
+readonly var_name="Hi"
+echo $var_name
+
+var_name="hello"
+echo $var_name

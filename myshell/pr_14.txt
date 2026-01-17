@@ -1,0 +1,30 @@
+#!/bin/bash
+function myfun1 {
+echo "Hello Samarth How Are You Buddy! "
+}
+
+function myfun2() {
+echo "Hello Sam"
+}
+
+function myfun3() {
+ echo "this is arg: $# "
+}
+
+myfun4() {
+echo "hello $1! "
+}
+
+myfun5(){
+local num1=$1
+local num2=$2
+let sum=$num1+$num2
+echo "sum is $sum "
+}
+
+myfun5 4 10
+myfun4 Yes
+myfun1
+myfun2
+myfun3 Linux Admin Engineer
+

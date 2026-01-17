@@ -1,0 +1,13 @@
+#!/bin/bash
+read -p "Please insert here your marks: " marks
+
+if [ $marks -ge 85 ]
+then
+   echo "Class A"
+
+elif [ $marks -ge 70 ]
+then
+   echo "Class B"
+else
+  echo "Class 3"
+fi

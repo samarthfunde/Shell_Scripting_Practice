@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -p "Enter your marks" mark
+
+result=$([ $mark -gt 0 ] && echo "Pass" || echo "Fail" )
+echo "Number is $result"

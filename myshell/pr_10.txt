@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -p "Enter Your Mark1: " mark1
+read -p "Enter Your Mark2: " mark2
+
+if [ $mark1 -ge 70 ] && [ $mark2 -eq 50 ]
+then
+   echo "Your Pass"
+else 
+   echo "Your Fail"
+fi
+

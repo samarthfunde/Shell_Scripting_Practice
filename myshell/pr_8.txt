@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Please Selct one"
+echo "Select a for check the list"
+echo "Select b for check the date"
+
+read choice
+
+case $choice in
+             a)ls;;
+             b)date;;
+             *)"Not Found Please Select a or b "
+esac           

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#1st Expression
+
+mark1=50;
+mark2=90;
+
+if [ $mark1 -gt 30 ] || ( [ $mark2 -lt 95 ] &&  [ $mark2 -lt 80 ] )
+then
+    echo "Executed"
+else
+   echo "getting error"
+fi

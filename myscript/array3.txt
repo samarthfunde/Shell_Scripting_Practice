@@ -1,0 +1,20 @@
+#/bin/bash
+myarray=(1 2 hello "hello all")
+
+echo $myarray
+echo ${myarray[@]}
+echo "${myarray[0]}"
+echo ${myarray[1]}
+echo "${#myarray[*]}"
+echo ${myarray[*]:0}
+echo ${myarray[*]:1:3}
+
+# Declare associative array
+declare -A myArr
+
+# Assign values
+myArr=([name]="sam" [age]=22)
+
+# Access values
+echo ${myArr[name]}   # Output: sam
+echo ${myArr[age]}    # Output: 22

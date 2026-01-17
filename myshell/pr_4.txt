@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Hello" age
+echo "age is: $age"
+
+echo "Enter Your Name"
+read name 
+echo "Name: ${name}"

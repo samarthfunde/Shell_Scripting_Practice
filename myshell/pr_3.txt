@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mystr="Hello World I Am Samarth"
+
+length=${#mystr}
+echo "lenght:$length"
+
+up=${mystr^^}
+echo "$up"
+
+dec=${mystr,,}
+echo "$dec"
+
+replace=${mystr/Hello/Hii}
+echo "replace: $replace"

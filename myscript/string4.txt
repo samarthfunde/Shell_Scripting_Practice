@@ -1,0 +1,22 @@
+#!/bin/bash
+
+myvar="Hello World three four five"
+
+# Length of string
+length=${#myvar}
+echo "Length: $length"
+
+# Convert to uppercase
+upper=${myvar^^}
+echo "Uppercase: $upper"
+
+# Convert to lowercase
+low=${myvar,,}
+echo "Lowercase: $low"
+
+# Replace "World" with "Sam"
+place=${myvar/World/Sam}
+echo "Replaced: $place"
+
+slice=${myvar:1:6}
+echo "Slice: $slice"

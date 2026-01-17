@@ -1,0 +1,20 @@
+#!/bin/bash
+
+read -p "Insert Your Number: " num1
+num2=20
+
+while true
+do
+if [ $num1 -le $num2 ]
+then
+   echo "Number is $num1"
+   ((num1++))
+   if [ $num1 -gt $num2 ]
+   then
+      break
+   fi
+else
+   echo "Please Insert the number below the num2 "
+   read -p "Insert your Number here: " num1
+fi
+done

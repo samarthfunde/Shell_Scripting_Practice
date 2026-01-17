@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Select a for date"
+echo "Select b for see list"
+
+read cho
+case $cho in
+        a)date;; 
+        b)ls;;
+        *)"non valid input please select a or b"
+esac  

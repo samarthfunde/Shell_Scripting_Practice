@@ -1,0 +1,11 @@
+#!/bin/bash
+# ; = not required this semicolon after the line
+
+let a=10;
+let b=5;
+
+let sum=$a+$b;
+echo "$sum";
+echo $sum;
+
+echo "Substraction is: $(($a-$b))";

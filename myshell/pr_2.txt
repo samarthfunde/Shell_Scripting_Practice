@@ -1,0 +1,16 @@
+#!/bin/bash
+
+myarr=(1 2 3 hello "Samarth" 4.2)
+
+echo ${myarr[@]}
+echo ${myarr[1]}
+echo ${#myarr[*]}
+echo ${myarr[*]:2:2}
+echo ${myarr[*]}
+echo ${#myarr}
+
+# Declarative associative array
+declare -A myArr
+
+myArr=([name]="sam" [age]=22)
+echo ${myArr[name]}
